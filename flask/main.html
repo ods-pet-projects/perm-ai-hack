@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="apv">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>Проверка НКО</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<style>
+	.fa
+	{
+	   padding-left: 10px;
+	}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar" style="display:none;">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">AdminKit</span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-profile.html">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-sign-in.html">
+              <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-sign-up.html">
+              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+              <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Tools & Components
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-buttons.html">
+              <i class="align-middle" data-feather="square"></i> <span class="align-middle">Buttons</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-forms.html">
+              <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Forms</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-cards.html">
+              <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Cards</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-typography.html">
+              <i class="align-middle" data-feather="align-left"></i> <span class="align-middle">Typography</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="icons-feather.html">
+              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Plugins & Addons
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="charts-chartjs.html">
+              <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="maps-google.html">
+              <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
+            </a>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
+						<div class="mb-3 text-sm">
+							Are you looking for more components? Check out our premium version.
+						</div>
+						<div class="d-grid">
+							<a href="upgrade-to-pro.html" class="btn btn-primary">Upgrade to Pro</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3">Помощник проверки НКО</h1>
+                    
+                    <div class="card-body">
+	                    <form method=post enctype=multipart/form-data>
+                            <p>7814762561 - НГ, 7729451621 - Иннопрактика, 7709471429 - фбк, 1087799008967 - Фонд Хабенского</p>
+							<input type="text" name="inn" class="form-control" placeholder="введите инн" value="" length="40" list="inns">
+                            
+   <datalist id="inns">
+    <option>7708236775</option>
+    <option>7814762561</option>
+   </datalist> 
+                            <br> <p>загрузите pdf устав</p>
+  									<input type="file" name="input_file" class="form-control" placeholder="загрузите устав" value="" length="40">
+                            <br>
+                            <input type="submit" value="проверить" class="btn btn-primary">
+							</form>
+
+<hr>                        
+        {% if inn_terr %}
+        <span class="badge bg-danger">Компания находится в реестре экстримистов\террористов !!! </span>
+                        <p>{{inn_terr}}</p>
+
+        {% endif %}
+                        
+        {% if inn_info %}
+        <h3>Налоговая</h3> 
+        <span class="badge bg-success">ИНФО из dadata</span><br><br>
+                                             
+                        <b>ИНН </b> {{inn_info.data.inn}}<br>
+                        <b>ОГРН </b> {{inn_info.data.ogrn}}  <br><br>
+                        
+                        <b>полное название </b> {{inn_info.data.name.full_with_opf}}<br>
+                        <b>короткое название </b> {{inn_info.data.name.short_with_opf}}  <br><br>
+                        
+
+                        <b>ФИО руководителя </b> {{inn_info.data.management.name}}<br>
+                        <b>пост </b> {{inn_info.data.management.post}}  <br><br>
+                        
+                        <b>Количество филиалов </b> {{inn_info.data.branch_count}}<br><br>
+                        <b>Головная компания </b> {% if inn_info.data.branch_type == "MAIN": %} Да
+	{% else %}
+       Нет
+	{% endif %}
+                        
+ <br>
+                        
+                             <b>Юр.лицо </b> {% if inn_info.data.type == "LEGAL": %} Да
+	{% else %}
+       ИП (!!!!!!!!!!!!!!!!!!!!!!)
+	{% endif %}
+                        
+ <br>                   
+                        
+                        
+                        
+                        <b>Основной оквэд </b> {{inn_info.data.okved}}<br>
+                        
+                        
+                        
+                        {% if inn_info.data.okveds %}
+                        
+                        <b>Дополнительные оквэды </b>
+                        
+   {% for o in inn_info.data.okveds: %}
+                        
+        <li>{{ o }}</li>
+	{% endfor %}  <br><br>
+                        
+                        {% endif %}
+                        
+                        <br>
+                        
+                        <b>Адрес </b> {{inn_info.data.address.value}}<br><br>
+                        
+                        <b>Дата выдачи ОГРН: </b> {{inn_info.data.ogrn_date}}  <br><br>
+                        
+                        <b>Дата регистрации: </b> {{inn_info.data.state.registration_date}}  <br><br>
+                        <b>Дата последних обновлений: </b> {{inn_info.data.state.actuality_date}}  <br><br>
+                        <hr>
+                        
+                        <h3>Минюст</h3>
+                        {% if reports %}
+                        
+                        <b>Отчёты за 2020:</b><br>
+                        
+                           {% for r in reports: %}
+                        
+        <a href='{{r}}' target="_blank">{{r}}</a><br>
+                        
+	{% endfor %}<br>
+ 
+                        
+                        {% endif %}
+                        <b>Статьи расходов:</b><br>
+                         <br>
+                        {% if df%}
+                         {%for d,l in df.items(): %}
+                         {{d}} : {{l}}<br>
+                         {% endfor %}
+                        {% endif %}
+                        <hr>
+                        
+                        
+                        <h3>Устав</h3>                     
+                        
+                        <hr>
+                        
+                        <h3>Площадки верифицированных НКО</h3>        
+                        {%if pls%}
+                          {% for r in pls: %}
+                             {{r}}<br>
+                          {% endfor %}
+                        {% endif%}
+                        <hr>
+                        
+                        
+                        <h3>Президентские гранты</h3>                     
+                        {% if grants%}
+                        <span class="badge bg-success">Обнаружены полученные гранты</span><br><br>
+                        
+										<div class="row">
+						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
+							<div class="card flex-fill">
+								<div class="card-header">
+								</div>
+								<table class="table table-hover my-0">
+									<thead>
+										<tr>
+											<th>Ссылка</th>
+											<th class="d-none d-xl-table-cell">Рейтинг заявки</th>
+                                            <th>Размер гранта</th>
+											<th>Софинансирование</th>
+											<th class="d-none d-md-table-cell">Цель</th>
+                                            <th class="d-none d-md-table-cell">Сроки реализации</th>                                            
+										</tr>
+									</thead>
+									<tbody>
+									
+{% for rr in grants %}
+
+<tr>
+
+<td><a href="{{rr[0]}}" target="_blank"> {{rr[0]}}</a></td>
+
+<td>{{rr[1]}}</td>
+<td>{{rr[2]}}</td>
+<td>{{rr[3]}}</td>
+<td>{{rr[4]}}</td>
+<td>{{rr[5]}}</td>
+    
+</tr>
+
+{% endfor %}                                       
+									</tbody>
+								</table>
+							</div>
+						</div> 
+     {% else %}
+                         Гранты отсутствуют
+                                            
+                        {% endif %}              
+                        <hr>
+                        
+                        
+                        <h3>Анализ соцсетей</h3>                     
+                        {% if vk%}
+                          {% for r in vk: %}
+                             {{r}}<br>
+                          {% endfor %}
+                       
+                        {% endif %}                        
+                        <hr>
+                        
+                        
+                        <h3>Анализ поисковой выдачи</h3>                     
+                        {% if fraud%}
+                        {{fraud}}
+                        {% endif %}
+                        <hr>
+<!--
+
+2) имя и должность руководителя + 
+3) наличие филиалов + 
+4) тип юр лица +
+5) список оквэд +
+6) адрес, требуется ли ручная проверка адреса +
+
+7) статус организации +
+
+ACTIVE       — действующая
+LIQUIDATING  — ликвидируется
+LIQUIDATED   — ликвидирована
+BANKRUPT     — банкротство
+REORGANIZING — в процессе присоединения к другому юрлицу, с последующей ликвидацией
+
+
+8) количество сотрудников - у нас их нет +
+
+9) дата выдачи огрн - регистрации компании + 
+
+10) дата обновления информации о компании на сайте налоговой +
+
+
+
+-->
+                        
+                              
+                        
+                        
+                        
+        {% endif %}
+                            </div>
+
+						<!--
+						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
+							<div class="card flex-fill">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Календарь</h5>
+								</div>
+								<div class="card-body d-flex">
+									<div class="align-self-center w-100">
+										<div class="chart">
+											<div id="datetimepicker-dashboard"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Monthly Sales</h5>
+								</div>
+								<div class="card-body d-flex w-100">
+									<div class="align-self-center chart chart-lg">
+										<canvas id="chartjs-dashboard-bar"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						-->
+					</div>
+
+					<a name="company"><h1 class="h3 mb-3">Дополнительная информация об НКО</h1></a>
+					
+					
+										<div class="row">
+						<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0"><b>НКО</b>Активность по городам</h5>
+								</div>
+								<div class="card-body px-4">
+									<div id="world_map" style="height:350px;"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>AdminKit Demo</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Янв", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+					datasets: [{
+						label: "Уровень опасности",
+						fill: false,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							1,
+							1,
+							1,
+							2,
+							15,
+							16,
+							19,
+							91
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 20
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 91],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [
+			    {
+				coords: [55.7522, 37.6156],
+				name : "Москва"
+				},
+			{
+					coords: [59.230391, 30.473701],
+					name: "Санкт-Петербург"
+				},
+				{
+					coords: [54.704060, 20.102493],
+					name: "Калининград"
+				},
+				{
+					coords: [58.524379, 31.379206],
+					name: "Великий Новгород"
+				},
+				{
+					coords: [43, 131],
+					name: "Владивосток"
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+
+</body>
+
+</html>
